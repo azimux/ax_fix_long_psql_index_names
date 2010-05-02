@@ -1,0 +1,4 @@
+Fixes a problem that arises with certain postgresql adapters when an index_name
+is over 63 characters.
+
+This works by truncating index names in index_name to 63 characters.
